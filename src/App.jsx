@@ -45,7 +45,7 @@ function App() {
       link: {
         githubFrontend: "https://github.com/JasmineE1308/url-newsapi",
         githubBackend: "https://github.com/JasmineE1308/newsurlapi-backend",
-        liveFrontend: "https://urldev-react-times.netlify.app/home",
+        liveFrontend: "https://urldev-react-times.netlify.app/",
       },
     },
     {
