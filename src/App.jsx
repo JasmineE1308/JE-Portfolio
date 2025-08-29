@@ -14,16 +14,34 @@ export default function App() {
 
   const projects = [
     {
-      title: 'Memory Game — Flip Card Matching',
-      stack: 'HTML, CSS, JavaScript',
-      desc: 'A simple but engaging memory game with responsive UI and clean animations.',
-      link: 'https://github.com/JasmineE1308',
+      title: 'Shopping cart_MERN',
+      desc: 'A full-stack MERN shopping cart app with user authentication, product management, cart, and order handling.',
+      techstack: 'React, Node.js, Express, MongoDB',
+      link: {
+        githubFrontend: "https://github.com/JasmineE1308/shoppingmern",
+        githubBackend: "https://github.com/JasmineE1308/shoppingmern",
+        liveFrontend: "https://jasminee1308.github.io/shop/#/",
+      },
     },
     {
       title: 'Real-Time News Application (MERN)',
-      stack: 'MongoDB, Express, React, Node',
-      desc: 'News feed with live updates, category filters and search. Built as part of GUVI FSD.',
-      link: 'https://github.com/JasmineE1308',
+      desc: 'News feed with live updates, category filters and search. Built as a capstone FSD project.',
+      techstack: 'MongoDB, Express, React, JWT, Node',
+      link: {
+        githubFrontend: "https://github.com/JasmineE1308/url-newsapi",
+        githubBackend: "https://github.com/JasmineE1308/newsurlapi-backend",
+        liveFrontend: "https://urldev-react-times.netlify.app/home",
+      },
+    },
+    {
+      title: 'MERN Movie app',
+      desc: 'A MERN stack movie search app that integrates with the OMDb API to let users search movies, view details, and save favorites. Includes JWT authentication, MongoDB storage, and a responsive React frontend.',
+      techstack: 'React, Javascript, Express, TailwindCSS, JWT, Node',
+      link: {
+        githubFrontend: "https://github.com/JasmineE1308/mern-movie",
+        githubBackend: "https://github.com/JasmineE1308/mern-movie",
+        liveFrontend: "https://jasminee1308.github.io/movieapp/",
+      },
     },
   ]
 
@@ -74,16 +92,16 @@ export default function App() {
               <a href="#contact" className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-2xl border border-gray-300 hover:bg-gray-50">Contact Me</a>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-600">
-              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4"/> Chennai, India</span>
-              <a className="inline-flex items-center gap-2 hover:underline" href="mailto:Jasminechristo2@gmail.com"><Mail className="h-4 w-4"/> Jasminechristo2@gmail.com</a>
-              <a className="inline-flex items-center gap-2 hover:underline" href="tel:+919442005785"><Phone className="h-4 w-4"/> +91 94420 05785</a>
+              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> Chennai, India</span>
+              <a className="inline-flex items-center gap-2 hover:underline" href="mailto:Jasminechristo2@gmail.com"><Mail className="h-4 w-4" /> Jasminechristo2@gmail.com</a>
+              <a className="inline-flex items-center gap-2 hover:underline" href="tel:+919442005785"><Phone className="h-4 w-4" /> +91 94420 05785</a>
             </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="relative">
             <div className="aspect-square rounded-3xl bg-gradient-to-br from-indigo-100 to-violet-100 shadow-inner p-3">
               <div className="w-full h-full rounded-2xl bg-white/70 border border-gray-200 flex items-center justify-center">
-                <Code2 className="w-24 h-24"/>
+                <Code2 className="w-24 h-24" />
               </div>
             </div>
           </motion.div>
@@ -158,7 +176,7 @@ export default function App() {
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-lg font-semibold">{p.title}</h3>
                   <a className="text-sm font-medium inline-flex items-center gap-1 text-indigo-600 hover:underline" href={p.link} target="_blank" rel="noreferrer">
-                    View on GitHub <ExternalLink className="h-4 w-4"/>
+                    View on GitHub <ExternalLink className="h-4 w-4" />
                   </a>
                 </div>
                 <p className="text-sm text-gray-700 mt-2">{p.desc}</p>
@@ -217,10 +235,10 @@ export default function App() {
               <h3 className="text-lg font-semibold">Get in touch</h3>
               <p>I'm open to full-time roles and exciting projects. Reach out and let's build something great!</p>
               <div className="flex flex-col gap-2">
-                <a className="inline-flex items-center gap-2 hover:underline" href="mailto:Jasminechristo2@gmail.com"><Mail className="h-4 w-4"/> Jasminechristo2@gmail.com</a>
-                <a className="inline-flex items-center gap-2 hover:underline" href="tel:+919442005785"><Phone className="h-4 w-4"/> +91 94420 05785</a>
-                <a className="inline-flex items-center gap-2 hover:underline" href="https://www.linkedin.com/in/jasmine-e-0395491a7" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4"/> linkedin.com/in/jasmine-e-0395491a7</a>
-                <a className="inline-flex items-center gap-2 hover:underline" href="https://github.com/JasmineE1308" target="_blank" rel="noreferrer"><Github className="h-4 w-4"/> github.com/JasmineE1308</a>
+                <a className="inline-flex items-center gap-2 hover:underline" href="mailto:Jasminechristo2@gmail.com"><Mail className="h-4 w-4" /> Jasminechristo2@gmail.com</a>
+                <a className="inline-flex items-center gap-2 hover:underline" href="tel:+919442005785"><Phone className="h-4 w-4" /> +91 94420 05785</a>
+                <a className="inline-flex items-center gap-2 hover:underline" href="https://www.linkedin.com/in/jasmine-e-0395491a7" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4" /> linkedin.com/in/jasmine-e-0395491a7</a>
+                <a className="inline-flex items-center gap-2 hover:underline" href="https://github.com/JasmineE1308" target="_blank" rel="noreferrer"><Github className="h-4 w-4" /> github.com/JasmineE1308</a>
               </div>
             </div>
           </div>
@@ -229,9 +247,9 @@ export default function App() {
             <div className="p-4 sm:p-6">
               <h3 className="text-lg font-semibold mb-3">Quick message</h3>
               <form action="mailto:Jasminechristo2@gmail.com" method="post" encType="text/plain" className="space-y-3">
-                <input name="name" required placeholder="Your name" className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500"/>
-                <input name="email" type="email" required placeholder="Your email" className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500"/>
-                <textarea name="message" required placeholder="Your message" rows={4} className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500"/>
+                <input name="name" required placeholder="Your name" className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
+                <input name="email" type="email" required placeholder="Your email" className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
+                <textarea name="message" required placeholder="Your message" rows={4} className="w-full rounded-xl border border-gray-300 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500" />
                 <button type="submit" className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-2xl bg-indigo-600 text-white hover:opacity-90">Send</button>
               </form>
             </div>
@@ -244,9 +262,9 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm">© {new Date().getFullYear()} Jasmine E. All rights reserved.</p>
           <div className="flex items-center gap-3">
-            <a href="https://github.com/JasmineE1308" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Github className="h-4 w-4"/> GitHub</a>
-            <a href="https://www.linkedin.com/in/jasmine-e-0395491a7" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Linkedin className="h-4 w-4"/> LinkedIn</a>
-            <a href={resumeUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Download className="h-4 w-4"/> Resume</a>
+            <a href="https://github.com/JasmineE1308" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Github className="h-4 w-4" /> GitHub</a>
+            <a href="https://www.linkedin.com/in/jasmine-e-0395491a7" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Linkedin className="h-4 w-4" /> LinkedIn</a>
+            <a href={resumeUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm hover:underline"><Download className="h-4 w-4" /> Resume</a>
           </div>
         </div>
       </footer>
